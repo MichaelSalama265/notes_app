@@ -7,7 +7,7 @@ class NotesItem extends StatelessWidget {
     return Container(
       padding: EdgeInsets.only(top: 24, bottom: 24, left: 16),
       decoration: BoxDecoration(
-        color: Colors.blue,
+        color: Colors.orange,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -22,7 +22,10 @@ class NotesItem extends StatelessWidget {
               padding: const EdgeInsets.only(top: 20, bottom: 20),
               child: Text(
                 'Dreams Come True ncjwnfkemf dfmekcme ',
-                style: TextStyle(color: Colors.black.withOpacity(.8)),
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black.withOpacity(.8),
+                ),
               ),
             ),
             trailing: IconButton(
