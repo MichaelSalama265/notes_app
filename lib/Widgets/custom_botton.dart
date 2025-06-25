@@ -9,7 +9,7 @@ class CustomBotton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: KprimaryColor,
+        color: kPrimaryColor,
         borderRadius: BorderRadius.circular(8),
       ),
       height: 50,
