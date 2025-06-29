@@ -29,20 +29,22 @@ class NotesItem extends StatelessWidget {
             ListTile(
               title: Text(
                 note.title,
-                style:const  TextStyle(fontSize: 26, color: Colors.black),
+                style: const TextStyle(fontSize: 26, color: Colors.black),
               ),
               subtitle: Padding(
                 padding: const EdgeInsets.only(top: 20, bottom: 20),
                 child: Text(
                   note.subtitle,
-                  style:  TextStyle(
+                  style: TextStyle(
                     fontSize: 16,
                     color: Colors.black.withOpacity(.8),
                   ),
                 ),
               ),
               trailing: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  note.delete();
+                },
                 icon: Icon(Icons.delete, color: Colors.black),
                 iconSize: 30,
               ),
